@@ -1,0 +1,507 @@
+<html>
+    
+    <head>
+        
+        <title> BBC News </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style type="text/css"> 
+            #topbar{
+                width: 1250px;
+                height: 50px;
+                margin: 0 auto;
+                
+            }
+            
+            
+            
+            body{
+                margin: 0;
+                padding: 0;
+                font-family:  Helvetica, freesans, sans-serif;
+            }
+            
+            #logo{
+                margin-top: px;
+                margin-right: 10px;
+                width: 80px; 
+                float: left;
+            }
+            
+            #logo:hover{ cursor: pointer;}
+            
+            #signin{
+                margin-right: 85px;
+                border-left: 1px #CCCCCC solid;
+                text-align: center;
+                
+                
+            }
+            
+        
+            
+            .topbar-section{
+                height: 100%;
+                float: left;
+                border-left: 1px #CCCCCC solid;
+            }
+            
+            #user{
+                width:45px;
+                margin: px;
+                
+                float: left;
+                }
+            .topbar-text{
+               font-weight: bold ;
+                font-size: 80%;
+                position: relative;
+                top: 15px;
+                
+            }
+            .topbar-menu{
+                font-weight: bold;
+                font-size: 80%;
+                padding:15px 18px 3px 18px;
+                
+                height:25px;
+                float:left;
+              
+            }
+            
+            .topbar-menu:hover{
+                border-bottom: 5px solid ;
+                border-bottom-color: black;
+            }
+            #more{
+                width:6px;
+                margin-left:40px;
+            
+            }
+            
+            #search{
+                background-color:#E4E4E4;
+                border:none;
+                height:25px;
+                font-weight: bold;
+                font-size: 80%;
+                margin:8px 0 0 20px;
+                padding:5px;
+                float:left;
+            }
+            #magnifier{
+                background-color:#E4E4E4;
+                height:25px;
+                margin:8px 0 0 0;
+                float:left;
+             }
+            .clear{
+                clear: both;
+            }
+            
+            #menu-bar-container{
+                background-color: #BB1919;
+                width: 100%;
+                height: 80px;
+            }
+            
+            #menu-bar{
+                width: 1250px;
+                margin: 0 auto;
+            }
+            
+            h1{
+                padding: 0;
+                margin: 0 auto;
+                color: white;
+                font-size: 40px;
+                font-weight: normal;
+                padding-top: 15px;
+                float: left;
+            }
+            #local-news{
+                float: right;
+                width: 200px;
+                color: white;
+                font-size: 130%;
+                margin: 10px;
+                padding: 5px;
+                text-align: center;
+                border: 3px #BB4545 solid;
+               
+             
+              
+            }
+            #local-news a{
+                color:white;
+                text-decoration: none;   
+            }
+            
+            #local-news a:hover{
+                border-bottom: 5px solid;
+                border-bottom-color: aliceblue;
+                
+                
+            }
+            
+            #menubar-container-2{
+                margin: 0;
+                padding: 0;
+                background-color: #A91717;
+                height: 30px;
+                width: 100%
+            }
+            #menubar-2{
+                width: 1280px;
+                margin: 0 auto;
+               
+           }
+            #menubar-2 a{
+                color: white;
+                text-decoration: none;
+                font-size: 15px;
+                padding: 0 15px;
+                position: relative;
+                top: 5px;
+                border-right: 1px solid #BB4545;
+                float: left;
+                
+                
+            }
+            #menubar-2 a:hover{
+                border-bottom: 5px solid;
+            }
+            
+            .no-border{
+                border: none !important;
+            }
+            #more2{
+                float: left;
+                width: 24px;
+                margin-left: -5px;
+            }
+            
+            #page-container{
+                width: 1250px;
+                margin: 0 auto;
+            }
+            
+            h2{
+                font-weight: normal;
+                font-size: 20px;
+                border-bottom: 3px solid #BB1919;
+                width: 115px;
+                padding-bottom: 3px;
+            }
+            
+            h3 a{
+                color: black;
+                text-decoration: none;
+                font-size: 30px;
+                font-weight: bold;
+               
+            }
+            
+            h3 a:hover{
+                color:dodgerblue;
+            }
+            
+            #article-summary{
+                color: #5a5a5a;
+                width: 420px;
+                float: left;
+                
+                
+            }
+            
+            .clock{
+                height: 13px;
+                margin-left: 5px;
+            }
+            
+            #topic-link{
+                color:#A91717 !important ; 
+                text-decoration: none;
+                border-left: 2px solid #CCCCCC;
+                padding-left: 5px;
+                
+            }
+            #topic-link:hover{
+                color: dodgerblue !important;
+            }
+            
+            .date{
+                padding-right: 5px;
+                
+               
+            }
+            #article-container{
+                width: 780px;
+                border-right:  1px solid #CCCCCC;
+                padding-right: 15px;
+                float: left;
+            }
+           
+            #trump-img{
+                height: 200px;
+            }
+            
+            
+            #article-hr{
+                width: 50px;
+                border-color: red;
+                
+            }
+            
+            
+            
+            #article-summary a{
+                text-decoration: none;
+                color: black;
+                padding: 5px;
+                
+            }
+            
+            #article-summary a:hover{
+                color: dodgerblue;
+            }
+            
+            #watch-listen{
+                float:left;
+                margin-left: 20px;
+                width: 370px;
+                position: relative;
+                top: -15px;
+            }
+           
+            h4{
+                
+                font-weight: normal;
+                font-size: 25px;
+               
+            }
+            
+            .sidebar-images{
+                float: left;
+                width: 140px;
+                margin-right:10px;
+                margin-bottom: 10px;
+            }
+            
+            .watch-listen-link{
+                color: black;
+                text-decoration: none;
+                font-weight:bold;
+                font-size: 13px;
+            }
+            
+            
+            .watch-listen-link:hover{
+                color: dodgerblue;
+            }
+            
+            .side-article{
+                float: right;
+                width: 200px;
+                position: relative;
+                top: -17px;
+                left: -20px;
+            }
+            
+            #article2-hr{
+                width: 50px;
+                border-color:#CCCCCC;
+                float: left;
+                
+                
+            }
+            
+            #main-article-2{
+                position: relative;
+                top: -350px;
+            }
+            
+        </style>
+    
+    </head>
+    
+    <body>
+        
+        <div id="topbar">
+
+                <img id="logo" src="images/bbc.png" >
+                <div id="signin" class="topbar-section"> 
+                    <img id="user" src="images/user.png">
+                    <span class="topbar-text"> BBC Account </span>
+
+                </div>
+                <div class="topbar-section topbar-menu" > Home </div>
+                <div class="topbar-section topbar-menu" > News </div>
+                <div class="topbar-section topbar-menu" > Sport </div>
+                <div class="topbar-section topbar-menu" > Reel </div>
+                <div class="topbar-section topbar-menu" > Worklife </div>
+                <div class="topbar-section topbar-menu" > Travel </div>
+                <div class="topbar-section topbar-menu" > Future </div>
+                <div class="topbar-section topbar-menu" > Culture </div>
+                <div  class="topbar-section topbar-menu" >More 
+                <img id="more"  src="images/more1.png"> </div>
+                <div  class="topbar-section">
+                    <input id="search" type="text" placeholder="Search.." name="search">
+                    <input type="image" id="magnifier" src="images/search.png" >
+                </div>
+
+        </div>
+        
+        <div class="clear">  </div>
+        
+        <div id="menu-bar-container">
+            
+            <div id="menu-bar">
+                <h1> NEWS </h1>
+                
+                <div id="local-news"> 
+                    <a href="https://telanganatoday.com/hyderabad">LOCAL NEWS... <img src="images/pin.png" width="25" style="margin-top: "> 
+                    </a>
+                </div>
+            </div>
+           
+        </div>
+        
+        <div id="menubar-container-2"> 
+            <div id="menubar-2">
+                <div id="menubar-2-section">
+                    <a href="https://www.bbc.com/news" target="_blank"> Home </a>
+                    <a href="https://www.bbc.com/news/election/us2020" target="_blank"> US Election </a>
+                    <a href="https://www.bbc.com/news/coronavirus" target="_blank"> Coronavirus </a>
+                    <a href="https://www.bbc.com/news/world" target="_blank"> World </a>
+                    <a href="https://www.bbc.com/news/world/asia" target="_blank"> Asia </a>
+                    <a href="https://www.bbc.com/news/uk" target="_blank"> UK </a>
+                    <a href="https://www.bbc.com/news/business" target="_blank"> Business </a>
+                    <a href="https://www.bbc.com/news/technology" target="_blank"> Tech </a>
+                    <a href=""> Science </a>
+                    <a href="https://www.bbc.com/news/science_and_environment" target="_blank"> Entertainment & Arts </a>
+                    <a href="https://www.bbc.com/news/health" target="_blank"> Health </a>
+                    <a href="https://www.bbc.com/news/health" target="_blank"> Stories </a>
+                    <a href="https://www.bbc.com/news/world_radio_and_tv" target="_blank"> Word News TV</a>
+                    <a  href="" class="no-border"> More </a>
+                    <img id="more2"  src="images/more1.png">
+                </div>
+                
+            
+            </div>
+        </div>
+        
+        <div class="clear"> </div>
+        
+        <div id="page-container"> 
+            
+            <div id="main-article"> 
+                 <h2> US Elections </h2>
+                <div id="article-container">
+                     
+                    <h3> <a href="https://edition.cnn.com/2020/09/11/politics/donald-trump-churchill-fdr-pandemic/index.html"> Trump twists history of Churchill & FDR </a> </h3>
+                    <div id="article-summary"> <p> Trump ridiculously invoked the former British Prime Minister Winston Churchill and the President Franklin Delano Roosevelt at a Thursday night rally, claiming that like them, he had tried hard to calm public panic in a dark hour.   </p>
+                        <p> <img class="clock" src="images/clock.png"> <span class="date">13 September 2020</span> <a href="" id="topic-link"> US Elections </a>  </p>
+                        <hr id="article-hr" align="left">
+                        
+                        <p> <a href="  ">  Trump called him 'my African-American. </a> </p>
+                        <p> <a href="  "> Woodward book is devastating to Trump </a> </p>
+                        
+                    </div>
+                    <img id="trump-img" src="images/trump.jpg" >
+                    
+                </div>
+             </div>
+            
+            
+            
+            
+            
+           <div id="watch-listen"> 
+                <h4 style="border-bottom: 2px solid"> Watch/Listen </h4>
+                
+                   <img class="sidebar-images" src="images/mlggamer.PNG" width="140px"> 
+                
+                    <div class="side-article">
+                        
+                       <p> <a  href=" " class="watch-listen-link"> MLG GAMER IS LIVE || ERANGEL 2.0 #teugugamer #pottivasu </a> </p>
+                       <p> <img class="clock" src="images/clock.png"> <span class="date">13 September 2020</span> <a href="" id="topic-link"> Gaming </a></p>
+                        
+                   </div>
+                
+                <div class="clear"> </div>
+                 <img class="sidebar-images" src="images/cnn.PNG" width="140px"> 
+                
+                    <div class="side-article">
+                        
+                       <p> <a  href=" " class="watch-listen-link"> CNN goes inside critical Phase 3 trials of Russian vaccine   </a> </p>
+                       <p> <img class="clock" src="images/clock.png"> <span class="date">15 September 2020</span> <a href="" id="topic-link"> Covid-19 </a></p>
+                        
+                   </div>
+                
+                <div class="clear"> </div>
+                
+                <img class="sidebar-images" src="images/sidebar2.PNG" width="140px"> 
+                
+                    <div class="side-article">
+                        
+                       <p> <a  href=" " class="watch-listen-link"> How Tourist hub Thaiand responded to Covid-19   </a> </p>
+                       <p> <img class="clock" src="images/clock.png"> <span class="date">15 September 2020</span> <a href="" id="topic-link"> World </a></p>
+                        
+                   </div>
+                
+                <div class="clear"> </div>
+                
+                <img class="sidebar-images" src="images/sidebar3.PNG" width="140px"> 
+                
+                    <div class="side-article">
+                        
+                       <p> <a  href=" " class="watch-listen-link">  Fans flock to blockbuster 'Tenet' as Beijing cinemas reopen   </a> </p>
+                       <p> <img class="clock" src="images/clock.png"> <span class="date">15 September 2020</span> <a href="" id="topic-link"> Entertainment </a></p>
+                        
+                   </div>
+
+                <div class="clear"> </div>
+                
+                <img class="sidebar-images" src="images/sidebar4.PNG" width="140px"> 
+                
+                    <div class="side-article">
+                        
+                       <p> <a  href=" " class="watch-listen-link">  India lacks social distancing as many fear worst yet to come    </a> </p>
+                       <p> <img class="clock" src="images/clock.png"> <span class="date">15 September 2020</span> <a href="" id="topic-link"> India </a></p>
+                        
+                   </div>
+
+                
+            </div>
+            <div class="clear"> </div>
+            
+            <div id="main-article-2"> 
+                 <h2>GAMING 么</h2>
+                <div id="article-container">
+                     
+                    <h3> <a href="https://edition.cnn.com/2020/09/11/politics/donald-trump-churchill-fdr-pandemic/index.html"> Indian Youtuber hits 1M subscribers in 1 month. </a> </h3>
+                    <div id="article-summary"> <p> Indian Youtuber Mr.Vasu Manepalli hits 1M subsribers in the span of just 1 month for his channel  <strong> MLG GAMER </strong> . <br> And Started earings in Dollars. We BBC team strongly demanding Mr.Vasu Manepalli to throw a huge party to his GNU friends especially to <strong> VINEETH MADISHETTI</strong>.  </p>
+                        <p> <img class="clock" src="images/clock.png"> <span class="date">13 September 2020</span> <a href="https://www.youtube.com/channel/UCeTSBEnRK3JgG6LifYzYOPg" id="topic-link"> MLG GAMER </a>  </p>
+                        <hr id="article-hr" align="left">
+                        
+                        <p> <a href=" https://www.youtube.com/watch?v=qL1Qm6e8oIE  ">  Highlights from Yotube channel </a> </p>
+                        <p> <a href=" https://www.instagram.com/p/CEGs_3vAaYC/?utm_source=ig_web_copy_link "> Get updated through Instagram Channel </a> </p>
+                        
+                    </div>
+                    <img id="trump-img" src="images/mlggamer2.PNG" >
+                    
+                </div>
+             </div>
+            
+            
+       </div>
+        
+        
+        
+    
+    
+    
+    </body>
+
+</html>
